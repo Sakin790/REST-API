@@ -1,5 +1,7 @@
 import app from "./app.js";
 
-app.listen(6060, () => {
-  console.log("Server is running");
+const PORT = 8080;
+
+app.listen(PORT, () => {
+  console.log(`Server is running at port ${PORT}`);
 });

@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(rateLimit());
 app.use(cookieParser());
 const rateLimiter = rateLimit({
-  windowMs: 1 * 60 * 10000,
+  windowMs: 1 * 60 * 1000,
   limit: 10,
   message: "To many request...!",
 });
